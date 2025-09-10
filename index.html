@@ -81,8 +81,8 @@
     <form id="phrase-form" onsubmit="return false;">
       <label for="sentence-select">Select Sentence:</label>
       <select id="sentence-select" required>
-        <option value="1" selected>down ke krew dhyan dijiye (word1) line number (word2) par aa rhi h</option>
-        <option value="2">down ke krew dhyan dijiye (word1) line number (word2) par aa gyi h</option>
+        <option value="1" selected>down ke krew dhyan dijiye (word1) line number (word2) par aa rahi h</option>
+        <option value="2">down ke krew dhyan dijiye (word1) line number (word2) par aa gayi hai</option>
       </select>
 
       <label for="word1">Word 1 (replaces (word1)):</label>
@@ -200,9 +200,9 @@
 
       let phrase = '';
       if (sentenceOption === '1') {
-        phrase = `down ke krew dhyan dijiye ${word1} line number ${word2} par aa rhi h`;
+        phrase = `down ke krew dhyan dijiye ${word1} line number ${word2} par aa rahi hai`;
       } else if (sentenceOption === '2') {
-        phrase = `down ke krew dhyan dijiye ${word1} line number ${word2} par aa gyi h`;
+        phrase = `down ke krew dhyan dijiye ${word1} line number ${word2} par aa gayi hai`;
       }
 
       const utterance = new SpeechSynthesisUtterance(phrase);
